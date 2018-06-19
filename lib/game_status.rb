@@ -26,10 +26,11 @@ def full?(board)
 end
 
 def draw?(board)
+  if (full?(board) && won?(board).is_a?(Array))
 end
 
 def over?(board)
-  (won?(board) || draw?(board) || full?(board)) ? true : false
+  (won?(board).is_a(Array) || draw?(board) || full?(board)) ? true : false
 end
 
 def winner(board)
