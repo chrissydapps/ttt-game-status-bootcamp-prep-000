@@ -53,5 +53,12 @@ end
 def winner(board)
   if won?(board).is_a?(Array)
     board[won?board[0]]
+  else
+    return nil
+  end
+  if !(full?(board) || draw?(board))
+    winner_combo = won?(board)
+    winner_index = winner_combo.detect{|index| index.between?(0, 8)}
+    board[winner_index]
   end
 end
