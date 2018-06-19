@@ -33,7 +33,9 @@ def over?(board)
 end
 
 def winner(board)
-  winner_combo = won?(board)
-  winner_index = winner_combo.detect{|index| index.between?(0, 8)}
-  board[winner_index]
+  if !(draw?(board) || full?(board))
+    winner_combo = won?(board)
+    winner_index = winner_combo.detect{|index| index.between?(0, 8)}
+    board[winner_index]
+  end
 end
