@@ -39,7 +39,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.include? {|token| (token != " ")}
+  board.all? {|token| (token == "X" || token = "O")}
 end
 
 def draw?(board)
