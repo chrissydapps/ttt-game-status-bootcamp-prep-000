@@ -17,10 +17,10 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_index
-    
+
   end
 end
 
 def full?(board)
-  
+  board.all? {|token| token != " " || token != nil}
 end
