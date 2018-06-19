@@ -15,10 +15,10 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  win_index = []
   WIN_COMBINATIONS.each do |win_combination|
+    win_combination.each do |index
     win_combination.select{|index| index.is_a?(Number)}
-    win_index << 
+    win_index <<
 
   end
 end
