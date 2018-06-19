@@ -33,4 +33,7 @@ def over?(board)
 end
 
 def winner(board)
+  winner_combo = won?(board)
+  winner_combo.detect{|index| index.between?(0, 8)}
+  
 end
