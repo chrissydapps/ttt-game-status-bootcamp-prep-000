@@ -16,7 +16,6 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
-    puts win_combination.inspect
     # win_index_1 = win_combination[0]
     # win_index_2 = win_combination[1]
     # win_index_3 = win_combination[2]
