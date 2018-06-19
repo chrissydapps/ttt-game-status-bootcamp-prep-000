@@ -19,17 +19,14 @@ def won?(board)
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
     win_index_3 = win_combination[2]
-    position_1 = board[win_index_1] 
+    position_1 = board[win_index_1]
     position_2 = board[win_index_2] 
     position_3 = board[win_index_3]
-    win_combination.each do |win_index|
-      position = board[win_index]
+    if ((position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O"))
+      win_combination
+    else
+      false
     end
-    if position 
-        
-    win_combination.select{|index| index.is_a?(Number)}
-    win_index <<
-
   end
 end
 
