@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
-    win_combination.each do |win_index
+    win_combination.each do |win_index|
     win_combination.select{|index| index.is_a?(Number)}
     win_index <<
 
