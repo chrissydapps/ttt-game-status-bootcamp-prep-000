@@ -34,6 +34,6 @@ end
 
 def winner(board)
   winner_combo = won?(board)
-  winner_combo.detect{|index| index.between?(0, 8)}
-  
+  winner_index = winner_combo.detect{|index| index.between?(0, 8)}
+  board[winner_index]
 end
