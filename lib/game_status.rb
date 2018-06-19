@@ -15,6 +15,8 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  if board.all? {|token| token == " "} || draw?(board)
+    return false
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
     win_index_2 = win_combination[1]
