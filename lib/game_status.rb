@@ -29,9 +29,8 @@ def won?(board)
         if position_1 == "X" && position_2 == "X" && position_3 == "X"
           return winner = [win_index_1, win_index_2, win_index_3]
         end
-          if position_1 == "O" && position_2 == "O" && position_3 == "O"
-              return winner = [win_index_1, win_index_2, win_index_3]
-            end
+        if position_1 == "O" && position_2 == "O" && position_3 == "O"
+          return winner = [win_index_1, win_index_2, win_index_3]
         end
       end
     end
