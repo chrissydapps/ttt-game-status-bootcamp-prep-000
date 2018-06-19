@@ -24,10 +24,6 @@ def won?(board)
     position_3 = board[win_index_3]
     WIN_COMBINATIONS.select {|win_combination| if ((position_1 == "X" && position_2 == "X" && position_3 == "X"))}
     # if ((position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" && position_2 == "O" && position_3 == "O"))
-    #
-    # else
-    #   false
-    # end
   end
 end
 
