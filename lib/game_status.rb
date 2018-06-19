@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if board.all? {|token| token == " "}
+  if board.all? {|token| token == " "} || draw?(board)
     return false
   else
     WIN_COMBINATIONS.each do |win_combination|
