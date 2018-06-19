@@ -24,17 +24,16 @@ def won?(board)
       position_2 = board[win_index_2]
       position_3 = board[win_index_3]
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        winner = [win_index_1, win_index_2, win_index_3]
+        return winner = [win_index_1, win_index_2, win_index_3]
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-        winner = [win_index_1, win_index_2, win_index_3]
+        return winner = [win_index_1, win_index_2, win_index_3]
       else
-        winner false
+        return winner false
       end
     else
-      winner = false
+      return winner = false
     end
   end
-  return winner
 end
 
 def full?(board)
