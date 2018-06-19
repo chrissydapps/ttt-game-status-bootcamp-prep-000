@@ -26,7 +26,8 @@ def full?(board)
 end
 
 def draw?(board)
-  if (full?(board) && won?(board).is_a?(Array))
+  if (full?(board) && won?(board) == false)
+    
 end
 
 def over?(board)
