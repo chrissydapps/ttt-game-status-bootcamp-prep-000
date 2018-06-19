@@ -24,3 +24,6 @@ end
 def full?(board)
   board.all? {|token| (token != " " || token != nil)}
 end
+
+def draw?(board)
+end
