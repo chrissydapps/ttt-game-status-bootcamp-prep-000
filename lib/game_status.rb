@@ -31,8 +31,8 @@ def won?(board)
         winner false
       end
     end
+    return winner
   end
-  return winner
 end
 
 def full?(board)
